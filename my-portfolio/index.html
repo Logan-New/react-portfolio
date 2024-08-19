@@ -1,13 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Logan's Portfolio</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <ul class="nav fw-normal justify-content-end">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- about -->
+    <section id="about" class="container">
+        <div class="intro text-center">
+            <h3 class="name fw-normal">Hello! <br> I'm Logan New</h3> 
+            <h4 class="fs-3 fw-normal fst-italic">Aspiring Software Developer</h4>
+            <p class="fs-5">
+                I'm excited to start my coding journey through Vanderbilt University's bootcamp! 
+                I'm committed to constantly pushing myself to learn
+                the skills necessary for creating efficient, high-quality user experiences.
+            </p> 
+            <!-- icons -->
+            <div class="d-flex justify-content-center">
+                <a href="https://github.com/Logan-New/" target="_blank">
+                    <img class="icon" src="./assets/icons/github.png" alt="Github"></a>
+                <a href="https://www.linkedin.com/in/logan-new-4224bb2a4/" target="_blank">
+                    <img class="icon" src="./assets/icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="" target="_blank">
+                    <img class="icon" src="./assets/icons/resume.png" alt="Resume"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="container">
+        <h3 class="title fw-medium text-center">Skills</h3>
+        <div class="skills-container d-flex flex-wrap justify-content-center">
+            <div class="skill-item text-center">
+                <!-- languages -->
+                <h5>Languages</h5>
+                <img class="skills" src="./assets/icons/html.png" alt="HTML"/>
+                <img class="skills" src="./assets/icons/css.png" alt="CSS"/>
+                <img class="skills" src="./assets/icons/js.png" alt="Javascript"/>
+            </div>
+            <div class="skill-item text-center">
+                <!-- frontend -->
+                <h5>Frontend</h5>
+                <img class="skills" src="./assets/icons/react.png" alt="React"/>
+                <img class="skills" src="./assets/icons/jquery.png" alt="jquery"/>
+                <img class="skills" src="./assets/icons/bootstrap.png" alt="Bootstrap"/>
+                <img class="skills" src="./assets/icons/handlebars.png" alt="Handlebars"/>
+            </div>
+            <div class="skill-item text-center">
+                <!-- backend -->
+                <h5>Backend</h5>
+                <img class="skills" src="./assets/icons/node.png" alt="Node"/>
+                <img class="skills" src="./assets/icons/express.png" alt="Express"/>
+                <img class="skills" src="./assets/icons/mvc.png" alt="MVC"/>
+                <img class="skills" src="./assets/icons/sequelize.png" alt="Sequelize"/>
+            </div>
+            <div class="skill-item text-center">
+                <!-- databases -->
+                <h5>Databases</h5>
+                <img class="skills" src="./assets/icons/mongo.png" alt="MongoDB"/>
+                <img class="skills" src="./assets/icons/mysql.png" alt="MySQL"/>
+                <img class="skills" src="./assets/icons/postgresql.png" alt="PostgreSQL"/>
+                <img class="skills" src="./assets/icons/nosql.png" alt="NoSQL"/>
+            </div>
+            <div class="skill-item text-center">
+                <!-- other -->
+                <h5>Other</h5>
+                <img class="skills" src="./assets/icons/api.png" alt="API"/>
+                <img class="skills" src="./assets/icons/pwa.png" alt="PWA"/>
+                <img class="skills" src="./assets/icons/json.png" alt="JSON"/>
+                <img class="skills" src="./assets/icons/vscode.png" alt="VScode"/>
+                <img class="skills" src="./assets/icons/agile.png" alt="Agile"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="container">
+        <h3 class="title fw-medium text-center">Projects</h3>
+        <div class="work-topics">
+            <div class="project-item text-center">
+                <a href="https://github.com/Logan-New/My-Blog-post" target="_blank">
+                    <h5>My Blog</h5>
+                </a>
+            </div>
+            <div class="project-item text-center">
+                <a href="https://github.com/Logan-New/prework-study-guide/" target="_blank">
+                    <h5>Prework Study Guide</h5>
+                </a>
+            </div>
+            <div class="project-item text-center">
+                <a href="https://github.com/Logan-New/Challenge-3/" target="_blank">
+                    <h5>Payroll Tracker</h5>
+                </a>
+            </div>
+            <div class="project-item text-center">
+                <a href="https://github.com/Logan-New/WeatherApp/" target="_blank">
+                    <h5>Weather Dashboard</h5>
+                </a>
+            </div>
+            <div class="project-item text-center">
+                <a href="https://drive.google.com/file/d/1ByERF-r9nfD2vV7NTeAPiJ8Eq2Z77e32/view?usp=drive_link" target="_blank">
+                    <h5>Readme Generator</h5>
+                </a>
+            </div>
+            <div class="project-item text-center">
+                <a href="https://github.com/Logan-New/LogoGenerator" target="_blank">
+                    <h5>SVG Logomaker</h5>
+                </a>
+            </div>
+            <div class="project-item text-center">
+                <a href="https://drive.google.com/file/d/1Z2b_KfECFa9OSrRkEeUEuymo3pO7RisK/view" target="_blank">
+                    <h5>Employee Tracker</h5>
+                </a>
+            </div>
+            <div class="project-item text-center">
+                <a href="https://drive.google.com/file/d/1ZAg_Xjlme_aFGdmAnFRYi-WQZegUTABn/view" target="_blank">
+                    <h5>Ecommerce Site</h5>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="container">
+        <h3 class="title fw-medium text-center">Contact</h3>
+        <div class="contact fst-italic fw-light text-center">
+            <p><span class="label fw-medium">Email:</span> logannew53@icloud.com</p>
+            <p><span class="label fw-medium">Phone number:</span> (502)-528-1377</p>
+            <p><span class="label fw-medium">Address:</span> 2601 Ballard School Rd, La Grange, KY 40031</p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="container text-center">
+        <h5>Developed by Logan New</h5>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>

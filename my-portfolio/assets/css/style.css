@@ -1,0 +1,234 @@
+/* font imported from google fonts */
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #f4f4f9;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+:root {
+    --primary: #1abc9c;
+    --secondary: #ecf0f1;
+    --dark: #34495e;
+    --light: #ffffff;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.title {
+    text-align: center;
+    color: var(--light);
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* nav links */
+.nav-link {
+    color: var(--light);
+    font-size: 18px;
+    margin: 10px 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--dark);
+    border-radius: 5px;
+    color: var(--light);
+}
+
+/* about */
+#about {
+    padding: 60px 20px;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro {
+    max-width: 900px;
+}
+
+.name {
+    font-size: 48px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 20px;
+    color: var(--dark);
+    line-height: 1.8;
+    margin: 0 0 30px 0;
+}
+
+/* github, linkedin, resume */
+.icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    opacity: 0.9;
+    margin: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+    opacity: 1.0;
+    transform: scale(1.1);
+    box-shadow: var(--shadow);
+}
+
+/* skills */
+#skills {
+    padding: 60px 20px;
+    background-color: var(--light);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 18px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+/* projects */
+#projects {
+    padding: 60px 20px;
+    background-color: var(--secondary);
+}
+
+.work-topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: var(--light);
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-item h5 {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+/* contact */
+#contact {
+    padding: 60px 20px;
+    background-color: var(--light);
+    text-align: center;
+}
+
+.contact {
+    font-size: 24px;
+    margin-top: 20px;
+    color: var(--primary);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.label {
+    color: var(--dark);
+}
+
+/* footer */
+footer {
+    padding: 20px;
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+}
+
+footer h5 {
+    font-weight: 300;
+    margin: 0;
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+    .project-item {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 80%;
+    }
+
+    .project-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+    .contact {
+        font-size: 20px;
+    }
+}
